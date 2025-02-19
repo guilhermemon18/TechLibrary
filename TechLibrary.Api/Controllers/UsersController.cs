@@ -14,7 +14,7 @@ namespace TechLibrary.Api.Controllers
         //Documentação das respostas devolvidas pela API.
         [ProducesResponseType(typeof(ResponseRegisteredUserJson), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
-        public IActionResult Create(RequestUserJson request)
+        public IActionResult Register(RequestUserJson request)
         {
             try
             {
