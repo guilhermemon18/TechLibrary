@@ -15,7 +15,8 @@ namespace TechLibrary.Api.Services.LoggedUser
         public User User(TechLibraryDbContext dbContext)
         {
             var authentication = _httpContext.Request.Headers.Authorization.ToString();
-
+            //Obtem a substring começando a partir do indice do comprimento da string "Bearer "
+            //Trim remove espaços em branco no inicio e fim.
             var token = authentication["Bearer ".Length..].Trim();
 
             var tokenHandler = new JwtSecurityTokenHandler();
