@@ -2,7 +2,7 @@
 
 namespace TechLibrary.Exception
 {
-    class NotFoundException : TechLibraryException
+    public class NotFoundException : TechLibraryException
     {
 
         public NotFoundException(string message) : base(message) { }
